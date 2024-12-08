@@ -25,6 +25,7 @@
 		E4EBB5362D058017002A33EF /* hab_en.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = hab_en.reality; path = ../../../../../Downloads/hab_en.reality; sourceTree = "<group>"; };
 		E4EBB5372D058017002A33EF /* LunarRover_English.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = LunarRover_English.reality; path = ../../../../../Downloads/LunarRover_English.reality; sourceTree = "<group>"; };
 		E4EBB53A2D0588E6002A33EF /* pancakes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = pancakes.usdz; path = ../../../../../Downloads/pancakes.usdz; sourceTree = "<group>"; };
+		E4EBB53C2D05AF1D002A33EF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 		E47830582D05325E007489F9 = {
 			isa = PBXGroup;
 			children = (
+				E4EBB53C2D05AF1D002A33EF /* README.md */,
 				E47830632D05325E007489F9 /* ArTest */,
 				E47830622D05325E007489F9 /* Products */,
 			);
