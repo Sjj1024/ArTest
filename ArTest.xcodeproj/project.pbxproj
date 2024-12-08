@@ -11,6 +11,9 @@
 		E47830672D05325E007489F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47830662D05325E007489F9 /* ContentView.swift */; };
 		E47830692D05325F007489F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47830682D05325F007489F9 /* Assets.xcassets */; };
 		E478306C2D05325F007489F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E478306B2D05325F007489F9 /* Preview Assets.xcassets */; };
+		E4EBB5382D058017002A33EF /* hab_en.reality in Resources */ = {isa = PBXBuildFile; fileRef = E4EBB5362D058017002A33EF /* hab_en.reality */; };
+		E4EBB5392D058017002A33EF /* LunarRover_English.reality in Resources */ = {isa = PBXBuildFile; fileRef = E4EBB5372D058017002A33EF /* LunarRover_English.reality */; };
+		E4EBB53B2D0588E6002A33EF /* pancakes.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E4EBB53A2D0588E6002A33EF /* pancakes.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E47830662D05325E007489F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E47830682D05325F007489F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E478306B2D05325F007489F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4EBB5362D058017002A33EF /* hab_en.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = hab_en.reality; path = ../../../../../Downloads/hab_en.reality; sourceTree = "<group>"; };
+		E4EBB5372D058017002A33EF /* LunarRover_English.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = LunarRover_English.reality; path = ../../../../../Downloads/LunarRover_English.reality; sourceTree = "<group>"; };
+		E4EBB53A2D0588E6002A33EF /* pancakes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = pancakes.usdz; path = ../../../../../Downloads/pancakes.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,7 @@
 			children = (
 				E47830642D05325E007489F9 /* AppDelegate.swift */,
 				E47830662D05325E007489F9 /* ContentView.swift */,
+				E4EBB5352D057FE4002A33EF /* models */,
 				E47830682D05325F007489F9 /* Assets.xcassets */,
 				E478306A2D05325F007489F9 /* Preview Content */,
 			);
@@ -65,6 +72,16 @@
 				E478306B2D05325F007489F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4EBB5352D057FE4002A33EF /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E4EBB53A2D0588E6002A33EF /* pancakes.usdz */,
+				E4EBB5362D058017002A33EF /* hab_en.reality */,
+				E4EBB5372D058017002A33EF /* LunarRover_English.reality */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +142,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4EBB5382D058017002A33EF /* hab_en.reality in Resources */,
 				E478306C2D05325F007489F9 /* Preview Assets.xcassets in Resources */,
+				E4EBB53B2D0588E6002A33EF /* pancakes.usdz in Resources */,
 				E47830692D05325F007489F9 /* Assets.xcassets in Resources */,
+				E4EBB5392D058017002A33EF /* LunarRover_English.reality in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
