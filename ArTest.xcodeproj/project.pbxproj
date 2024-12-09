@@ -12,9 +12,6 @@
 		E47830672D05325E007489F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47830662D05325E007489F9 /* ContentView.swift */; };
 		E47830692D05325F007489F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47830682D05325F007489F9 /* Assets.xcassets */; };
 		E478306C2D05325F007489F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E478306B2D05325F007489F9 /* Preview Assets.xcassets */; };
-		E4EBB5382D058017002A33EF /* hab_en.reality in Resources */ = {isa = PBXBuildFile; fileRef = E4EBB5362D058017002A33EF /* hab_en.reality */; };
-		E4EBB5392D058017002A33EF /* LunarRover_English.reality in Resources */ = {isa = PBXBuildFile; fileRef = E4EBB5372D058017002A33EF /* LunarRover_English.reality */; };
-		E4EBB53B2D0588E6002A33EF /* pancakes.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E4EBB53A2D0588E6002A33EF /* pancakes.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +21,6 @@
 		E47830662D05325E007489F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E47830682D05325F007489F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E478306B2D05325F007489F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E4EBB5362D058017002A33EF /* hab_en.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = hab_en.reality; path = ../../../../../Downloads/hab_en.reality; sourceTree = "<group>"; };
-		E4EBB5372D058017002A33EF /* LunarRover_English.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = LunarRover_English.reality; path = ../../../../../Downloads/LunarRover_English.reality; sourceTree = "<group>"; };
-		E4EBB53A2D0588E6002A33EF /* pancakes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = pancakes.usdz; path = ../../../../../Downloads/pancakes.usdz; sourceTree = "<group>"; };
 		E4EBB53C2D05AF1D002A33EF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,9 +76,6 @@
 		E4EBB5352D057FE4002A33EF /* models */ = {
 			isa = PBXGroup;
 			children = (
-				E4EBB53A2D0588E6002A33EF /* pancakes.usdz */,
-				E4EBB5362D058017002A33EF /* hab_en.reality */,
-				E4EBB5372D058017002A33EF /* LunarRover_English.reality */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -147,11 +138,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4EBB5382D058017002A33EF /* hab_en.reality in Resources */,
 				E478306C2D05325F007489F9 /* Preview Assets.xcassets in Resources */,
-				E4EBB53B2D0588E6002A33EF /* pancakes.usdz in Resources */,
 				E47830692D05325F007489F9 /* Assets.xcassets in Resources */,
-				E4EBB5392D058017002A33EF /* LunarRover_English.reality in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +286,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ArTest/Preview Content\"";
-				DEVELOPMENT_TEAM = 3AM8N433R2;
+				DEVELOPMENT_TEAM = 5H3WZ7BJYK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -313,7 +301,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wukong.watch.ArTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arkit.song.ArTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,7 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ArTest/Preview Content\"";
-				DEVELOPMENT_TEAM = 3AM8N433R2;
+				DEVELOPMENT_TEAM = 5H3WZ7BJYK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -344,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wukong.watch.ArTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arkit.song.ArTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

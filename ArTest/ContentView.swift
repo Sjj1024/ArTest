@@ -9,18 +9,18 @@ struct ContentView: View {
 }
 
 struct ARViewContainer: UIViewRepresentable {
-
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
         
         // 配置 AR 会话，启用平面检测
         let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = [.horizontal] // 启用水平面检测
+        // 启用水平面检测
+        configuration.planeDetection = [.horizontal]
         arView.session.run(configuration)
         
         // 创建一个立方体模型
         let mesh = MeshResource.generateBox(size: 0.1, cornerRadius: 0.005)
-        let material = SimpleMaterial(color: .gray, roughness: 0.15, isMetallic: true)
+        let material = SimpleMaterial(color: .gray, roughness: 0.15, isMetallic: false)
         let model = ModelEntity(mesh: mesh, materials: [material])
         
         // 创建一个水平面锚点
