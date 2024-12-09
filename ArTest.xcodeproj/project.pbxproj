@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4166E442D06EA5D001E8E5F /* hab_en.reality in Resources */ = {isa = PBXBuildFile; fileRef = E4166E432D06EA5D001E8E5F /* hab_en.reality */; };
 		E457658B2D05E3930096975C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E457658A2D05E3930096975C /* Coordinator.swift */; };
 		E47830652D05325E007489F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47830642D05325E007489F9 /* AppDelegate.swift */; };
 		E47830672D05325E007489F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47830662D05325E007489F9 /* ContentView.swift */; };
 		E47830692D05325F007489F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47830682D05325F007489F9 /* Assets.xcassets */; };
 		E478306C2D05325F007489F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E478306B2D05325F007489F9 /* Preview Assets.xcassets */; };
+		E48B00192D06DFF20056AED3 /* pancakes.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E48B00182D06DFF20056AED3 /* pancakes.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4166E432D06EA5D001E8E5F /* hab_en.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = hab_en.reality; path = ../../../../../Downloads/hab_en.reality; sourceTree = "<group>"; };
 		E457658A2D05E3930096975C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E47830612D05325E007489F9 /* ArTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47830642D05325E007489F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E47830662D05325E007489F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E47830682D05325F007489F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E478306B2D05325F007489F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E48B00182D06DFF20056AED3 /* pancakes.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = pancakes.usdz; path = ../../../../../Downloads/pancakes.usdz; sourceTree = "<group>"; };
 		E4EBB53C2D05AF1D002A33EF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +80,8 @@
 		E4EBB5352D057FE4002A33EF /* models */ = {
 			isa = PBXGroup;
 			children = (
+				E48B00182D06DFF20056AED3 /* pancakes.usdz */,
+				E4166E432D06EA5D001E8E5F /* hab_en.reality */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E48B00192D06DFF20056AED3 /* pancakes.usdz in Resources */,
 				E478306C2D05325F007489F9 /* Preview Assets.xcassets in Resources */,
 				E47830692D05325F007489F9 /* Assets.xcassets in Resources */,
+				E4166E442D06EA5D001E8E5F /* hab_en.reality in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

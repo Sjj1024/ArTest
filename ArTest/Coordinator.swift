@@ -29,6 +29,13 @@ class Coordinator: NSObject {
             // 将模型锚点添加到 AR 视图
             arView.scene.anchors.append(modelAnchor)
             
+            // 截图
+            arView.snapshot(saveToHDR: true, completion: { image in
+                // 保存到相册
+                print("snapshot")
+                // UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            })
+            
             // 调试信息：输出放置位置
             print("Placed object at: \(firstResult.worldTransform)")
         } else {
@@ -45,7 +52,6 @@ extension Coordinator: ARSessionDelegate {
         for anchor in anchors {
             if let planeAnchor = anchor as? ARPlaneAnchor {
                 print("Detected a plane: \(planeAnchor)")
-                
                 // 可以在这里更新 UI 或做其他反馈
             }
         }
