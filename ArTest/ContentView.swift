@@ -3,14 +3,44 @@ import RealityKit
 import SwiftUI
 
 struct ContentView: View {
+    
+    let modelName = ["biplane", "drummertoy", "pancakes", "pegasus"]
+    let modelMap = [
+        "biplane": try! ModelEntity.loadModel(named:  "biplane.usdz"),
+        "drummertoy": try! ModelEntity.loadModel(named:  "drummertoy.usdz"),
+        "pancakes": try! ModelEntity.loadModel(named:  "pancakes.usdz"),
+        "pegasus": try! ModelEntity.loadModel(named:  "pegasus.usdz"),
+    ]
+    
+    @State private var curModel = try! ModelEntity.loadModel(named:  "biplane.usdz")
+    
+
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        VStack {
+            ARViewContainer(curModel: $curModel)
+            HStack {
+                ForEach(modelName, id: \.self) {
+                    model in
+                    Image(model).resizable().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/).onTapGesture {
+                        print("click model: \(model)")
+                        // 更新当前模型
+                        curModel = self.modelMap[model]!
+                    }
+                }
+            }.padding(.horizontal)
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct ARViewContainer: UIViewRepresentable {
+
+    @Binding var curModel: ModelEntity
+
+
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
+        arView.debugOptions = .showFeaturePoints
 
         // 配置 AR 会话，启用平面检测
         let configuration = ARWorldTrackingConfiguration()
@@ -22,7 +52,7 @@ struct ARViewContainer: UIViewRepresentable {
         let anchor = AnchorEntity(.plane(.horizontal, classification: .any, minimumBounds: SIMD2<Float>(0.2, 0.2)))
 
         // 加载usdz模型文件
-        let modelEntry = try! ModelEntity.loadModel(named: "pancakes.usdz")
+        let modelEntry = curModel
         modelEntry.position = [0, 0, 0]
         modelEntry.scale = [0.01, 0.01, 0.01]
         anchor.addChild(modelEntry)
@@ -37,12 +67,24 @@ struct ARViewContainer: UIViewRepresentable {
 
         // 添加触摸事件识别器
         let tapGestureRecognizer = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap(_:)))
+        // 给arview添加动作识别
         arView.addGestureRecognizer(tapGestureRecognizer)
 
         return arView
     }
 
-    func updateUIView(_ uiView: ARView, context: Context) {}
+    func updateUIView(_ uiView: ARView, context: Context) {
+        print("update ui view")
+        // 删除之前的模型
+        uiView.scene.anchors.removeAll()
+        // 更新模型
+        let modelEntry = curModel
+        modelEntry.position = [0, 0, 0]
+        modelEntry.scale = [0.01, 0.01, 0.01]
+        let anchor = AnchorEntity(.plane(.horizontal, classification: .any, minimumBounds: SIMD2<Float>(0.2, 0.2)))
+        anchor.addChild(modelEntry)
+        uiView.scene.anchors.append(anchor)
+    }
 
     func makeCoordinator() -> Coordinator {
         return Coordinator()
