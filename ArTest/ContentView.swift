@@ -3,17 +3,19 @@ import RealityKit
 import SwiftUI
 
 struct ContentView: View {
-    
     let modelName = ["biplane", "drummertoy", "pancakes", "pegasus"]
-    let modelMap = [
-        "biplane": try! ModelEntity.loadModel(named:  "biplane.usdz"),
-        "drummertoy": try! ModelEntity.loadModel(named:  "drummertoy.usdz"),
-        "pancakes": try! ModelEntity.loadModel(named:  "pancakes.usdz"),
-        "pegasus": try! ModelEntity.loadModel(named:  "pegasus.usdz"),
-    ]
-    
-    @State private var curModel = try! ModelEntity.loadModel(named:  "biplane.usdz")
-    
+    var modelMap: [String: ModelEntity] = [:]
+
+    @State private var curModel: ModelEntity
+
+    init() {
+        print("init app")
+        for model in modelName {
+            let modelEntry = try! ModelEntity.loadModel(named: "\(model).usdz")
+            self.modelMap[model] = modelEntry
+        }
+        self.curModel = self.modelMap[self.modelName.first!]!
+    }
 
     var body: some View {
         VStack {
@@ -34,9 +36,7 @@ struct ContentView: View {
 }
 
 struct ARViewContainer: UIViewRepresentable {
-
     @Binding var curModel: ModelEntity
-
 
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
