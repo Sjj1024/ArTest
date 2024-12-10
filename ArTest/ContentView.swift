@@ -3,7 +3,7 @@ import RealityKit
 import SwiftUI
 
 struct ContentView: View {
-    let modelName = ["biplane", "drummertoy", "pancakes", "pegasus"]
+    let modelName = ["biplane", "drummertoy", "pancakes", "pegasus", "retrotv", "stratocaster", "toycar", "tulip"]
     var modelMap: [String: ModelEntity] = [:]
 
     @State private var curModel: ModelEntity
@@ -20,15 +20,17 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ARViewContainer(curModel: $curModel)
-            HStack {
-                ForEach(modelName, id: \.self) {
-                    model in
-                    Image(model).resizable().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/).onTapGesture {
-                        print("click model: \(model)")
-                        // 更新当前模型
-                        curModel = self.modelMap[model]!
+            ScrollView(.horizontal) {
+                HStack(content: {
+                    ForEach(modelName, id: \.self) {
+                        model in
+                        Image(model).resizable().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/).onTapGesture {
+                            print("click model: \(model)")
+                            // 更新当前模型
+                            curModel = self.modelMap[model]!
+                        }
                     }
-                }
+                })
             }.padding(.horizontal)
         }
         .edgesIgnoringSafeArea(.all)

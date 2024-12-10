@@ -11,6 +11,10 @@
 		E4166E4A2D070428001E8E5F /* drummertoy.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E4166E462D070428001E8E5F /* drummertoy.usdz */; };
 		E4166E4B2D070428001E8E5F /* biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E4166E472D070428001E8E5F /* biplane.usdz */; };
 		E4166E4C2D070428001E8E5F /* pegasus.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E4166E482D070428001E8E5F /* pegasus.usdz */; };
+		E4166E512D07E8DE001E8E5F /* retrotv.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E4166E4D2D07E8DD001E8E5F /* retrotv.usdz */; };
+		E4166E522D07E8DE001E8E5F /* tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E4166E4E2D07E8DE001E8E5F /* tulip.usdz */; };
+		E4166E532D07E8DE001E8E5F /* toycar.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E4166E4F2D07E8DE001E8E5F /* toycar.usdz */; };
+		E4166E542D07E8DE001E8E5F /* stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E4166E502D07E8DE001E8E5F /* stratocaster.usdz */; };
 		E457658B2D05E3930096975C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E457658A2D05E3930096975C /* Coordinator.swift */; };
 		E47830652D05325E007489F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47830642D05325E007489F9 /* AppDelegate.swift */; };
 		E47830672D05325E007489F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47830662D05325E007489F9 /* ContentView.swift */; };
@@ -23,6 +27,10 @@
 		E4166E462D070428001E8E5F /* drummertoy.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = drummertoy.usdz; path = ../../../../../Downloads/drummertoy.usdz; sourceTree = "<group>"; };
 		E4166E472D070428001E8E5F /* biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = biplane.usdz; path = ../../../../../Downloads/biplane.usdz; sourceTree = "<group>"; };
 		E4166E482D070428001E8E5F /* pegasus.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = pegasus.usdz; path = ../../../../../Downloads/pegasus.usdz; sourceTree = "<group>"; };
+		E4166E4D2D07E8DD001E8E5F /* retrotv.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = retrotv.usdz; path = ../../../../../Downloads/retrotv.usdz; sourceTree = "<group>"; };
+		E4166E4E2D07E8DE001E8E5F /* tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tulip.usdz; path = ../../../../../Downloads/tulip.usdz; sourceTree = "<group>"; };
+		E4166E4F2D07E8DE001E8E5F /* toycar.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = toycar.usdz; path = ../../../../../Downloads/toycar.usdz; sourceTree = "<group>"; };
+		E4166E502D07E8DE001E8E5F /* stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = stratocaster.usdz; path = ../../../../../Downloads/stratocaster.usdz; sourceTree = "<group>"; };
 		E457658A2D05E3930096975C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		E47830612D05325E007489F9 /* ArTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47830642D05325E007489F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,10 @@
 				E4166E462D070428001E8E5F /* drummertoy.usdz */,
 				E4166E452D070428001E8E5F /* pancakes.usdz */,
 				E4166E482D070428001E8E5F /* pegasus.usdz */,
+				E4166E4D2D07E8DD001E8E5F /* retrotv.usdz */,
+				E4166E502D07E8DE001E8E5F /* stratocaster.usdz */,
+				E4166E4F2D07E8DE001E8E5F /* toycar.usdz */,
+				E4166E4E2D07E8DE001E8E5F /* tulip.usdz */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -152,10 +164,14 @@
 			files = (
 				E4166E4C2D070428001E8E5F /* pegasus.usdz in Resources */,
 				E4166E492D070428001E8E5F /* pancakes.usdz in Resources */,
+				E4166E542D07E8DE001E8E5F /* stratocaster.usdz in Resources */,
 				E478306C2D05325F007489F9 /* Preview Assets.xcassets in Resources */,
 				E47830692D05325F007489F9 /* Assets.xcassets in Resources */,
+				E4166E522D07E8DE001E8E5F /* tulip.usdz in Resources */,
+				E4166E512D07E8DE001E8E5F /* retrotv.usdz in Resources */,
 				E4166E4A2D070428001E8E5F /* drummertoy.usdz in Resources */,
 				E4166E4B2D070428001E8E5F /* biplane.usdz in Resources */,
+				E4166E532D07E8DE001E8E5F /* toycar.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
